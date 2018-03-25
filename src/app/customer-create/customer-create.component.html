@@ -46,14 +46,14 @@
             <tr>
               <td>
 
-                <mat-checkbox>Is company?</mat-checkbox>
+                <mat-checkbox [checked]="isCompany"> Is company?</mat-checkbox>
               </td>
             </tr>
             <tr>
               <td>
                 <mat-form-field>
                   <mat-label>Created At</mat-label>
-                  <input matInput [matDatepicker]="picker" placeholder="Date of creation">
+                  <input  [value]="createdAt.value"  matInput [matDatepicker]="picker" placeholder="Date of creation">
                   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                   <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
@@ -62,7 +62,7 @@
             <tr>
               <td>
                 <mat-label>Gender</mat-label>
-                <mat-radio-group>
+                <mat-radio-group [(value)]="selectedGender" >
                   <mat-radio-button value="male">Male</mat-radio-button>
                   <mat-radio-button value="female">Female</mat-radio-button>
                 </mat-radio-group>
@@ -72,10 +72,11 @@
               <td>
                 <mat-form-field>
                   <mat-label>Lead Source</mat-label>
-                  <mat-select placeholder="Source">
-                    <mat-option *ngFor="let source of sources" [value]="source.value">
-                      {{ source.viewValue }}
-                    </mat-option>
+                  <mat-select [(value)]="selectedSource" placeholder="Source">
+                      <mat-option>None</mat-option>
+                      <mat-option value="email">Email Marketing</mat-option>
+                      <mat-option value="social">Social Media</mat-option>
+                      <mat-option value="affiliate">Affiliate</mat-option>
                   </mat-select>
 
                 </mat-form-field>

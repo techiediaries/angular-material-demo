@@ -7,7 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MyMaterialModule } from './material.module';
 
-import { DataService } from './data.service';
 
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
@@ -44,7 +43,7 @@ const appRoutes: Routes = [
     )    
   ],
   entryComponents: [ErrorComponent],
-  providers: [DataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

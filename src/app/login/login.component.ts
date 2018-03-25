@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   public username: string = "";
   public password: string ="";
-  public errorDialogRef: MatDialogRef<ErrorComponent>;
+  //public errorDialogRef: MatDialogRef<ErrorComponent>;
 
   constructor(private dialog: MatDialog,private router: Router) { }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {FormControl} from '@angular/forms';
 @Component({
   selector: 'app-customer-create',
   templateUrl: './customer-create.component.html',
@@ -10,16 +10,14 @@ export class CustomerCreateComponent implements OnInit {
   email: string = "";
   job: string = "";
   address: string = "";
-  
+  selectedSource: string = "email";
+  selectedGender: string = "male";
+  isCompany : boolean = false;
+  createdAt = new FormControl(new Date());
 
-  sources = [
-    {value: 'emarketing', viewValue: 'Email Marketing'},
-    {value: 'socialmedia', viewValue: 'Social Media'},
-    {value: 'affiliate', viewValue: 'Affiliate'}
-  ];
   constructor() { }
   public createCustomer(){
-    
+
   }
   ngOnInit() {
   }
