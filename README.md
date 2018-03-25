@@ -1,4 +1,10 @@
-# Angularmaterialdemo
+# Angular Material Demo
+
+
+![](https://screenshotscdn.firefoxusercontent.com/images/1608b70a-0003-453d-bf81-65222d8b9fa0.png)
+
+![](https://screenshotscdn.firefoxusercontent.com/images/aec0d969-33bd-46b9-9bd6-13597fde4a8f.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
