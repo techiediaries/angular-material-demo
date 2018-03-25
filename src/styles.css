@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%  !important;
+    
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.my-form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.my-tab
+{
+  padding: 200px;
+}

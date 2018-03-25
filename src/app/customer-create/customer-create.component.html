@@ -1,0 +1,99 @@
+<mat-card class="my-card">
+  <mat-card-header>
+    <mat-card-title>Create Customer</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="my-form">
+      <mat-tab-group>
+        <mat-tab label="General Information" class="my-tab">
+          <table style="width: 100%" cellspacing="10">
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Name" [(ngModel)]="name" name="name" required>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Address</mat-label>
+                  <textarea [(ngModel)]="address"  matInput></textarea>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Job</mat-label>
+                  <input matInput placeholder="Job" [(ngModel)]="job" name="job" required>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Email" [(ngModel)]="email" name="email">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+        </mat-tab>
+        <mat-tab label="Other Information" class="my-tab">
+          <table style="width: 100%" cellspacing="10">
+            <tr>
+              <td>
+
+                <mat-checkbox>Is company?</mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Created At</mat-label>
+                  <input matInput [matDatepicker]="picker" placeholder="Date of creation">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-label>Gender</mat-label>
+                <mat-radio-group>
+                  <mat-radio-button value="male">Male</mat-radio-button>
+                  <mat-radio-button value="female">Female</mat-radio-button>
+                </mat-radio-group>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <mat-label>Lead Source</mat-label>
+                  <mat-select placeholder="Source">
+                    <mat-option *ngFor="let source of sources" [value]="source.value">
+                      {{ source.viewValue }}
+                    </mat-option>
+                  </mat-select>
+
+                </mat-form-field>
+              </td>
+            </tr>
+
+          </table>
+        </mat-tab>
+      </mat-tab-group>
+
+
+
+
+
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="createCustomer()" color="primary">Create</button>
+  </mat-card-actions>
+</mat-card>
+
