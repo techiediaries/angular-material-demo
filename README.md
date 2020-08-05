@@ -6,7 +6,21 @@
 ![](https://screenshotscdn.firefoxusercontent.com/images/aec0d969-33bd-46b9-9bd6-13597fde4a8f.png)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## [Angular 10/8 Material Data-Table Tutorial & Example](https://www.techiediaries.com/angular-material-table/)
+
+Angular 10 Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering.
+
+## [Angular 10/9 Popup Modal Example with Angular Material Form and Modal Dialog Components](https://www.techiediaries.com/angular-material-login-form-modal-dialog/)
+
+In this tutorial, you'll build an example login UI with a form and modal dialog styled with Angular Material 10.
+
+## [Angular 10/9 Material Date Picker, Input, CheckBox, Radio Button and Select](https://www.techiediaries.com/angular-material-form-datepicker-example/)
+
+In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 10/9 web app.
+
+## [Angular 10/8 Material Dialog with Example](https://www.techiediaries.com/angular-material-dialogs/)
+
+This tutorial shows you how you can use Angular 10/9 Material to build Material UI dialogs for your web application
 
 ## Development server
 
